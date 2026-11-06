@@ -18,7 +18,7 @@
     const menuHTML = `
         <div id="aincrad-menu-container">
             <div id="aincrad-menu-header">
-                <span>Aincrad AI</span>
+                <span>XLOVE VIP</span>
                 <div id="aincrad-menu-close">✖</div>
             </div>
             <div id="aincrad-menu-content">
@@ -47,7 +47,7 @@
         statusText.innerText = "Status: Bypassing...";
         this.classList.add('active');
         setTimeout(() => this.classList.remove('active'), 1000);
-        
+
         const words = ['continue', 'proceed', 'get key', 'unlock', 'skip', 'clique', 'continuar'];
         setInterval(() => {
             document.querySelectorAll('button, a, div').forEach(el => {
@@ -79,7 +79,7 @@
         statusText.innerText = "Status: Ads Removed";
         this.classList.add('active');
         setTimeout(() => this.classList.remove('active'), 1000);
-        
+
         const ads = ['iframe', '.adsbygoogle', 'div[id*="ad-"]', 'div[class*="ad-"]'];
         ads.forEach(sel => document.querySelectorAll(sel).forEach(e => e.remove()));
         setTimeout(() => statusText.innerText = "Status: Standby", 2000);
